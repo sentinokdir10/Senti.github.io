@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sentiben — 3rd year student portfolio">
+<title>Sentiben | Student Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav class="nav">
+<a class="brand" href="#home">Sentiben<span>.</span></a>
+<button class="menu" aria-label="Open menu">☰</button>
+<div class="links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
+<a href="#skills">Skills</a><a href="#project">Project</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+</div></nav></header>
+
+<main>
+<section id="home" class="hero section"><div class="wrap hero-grid">
+<div class="reveal hero-copy"><p class="eyebrow">3rd Year • Electrical & Electronics Engineering</p>
+<h1>Hi, I’m <span>Sentiben</span>.</h1>
+<h2>Learning by building, experimenting and turning ideas into working projects.</h2>
+<p class="lead">I’m a third-year B.Tech Electrical and Electronics Engineering student at National Institute of Technology Nagaland. I’m building my technical foundation through coursework, hands-on projects and exploring how software and engineering can work together.</p>
+<div class="buttons"><a class="btn primary" href="#project">Explore My Project</a><a class="btn" href="#about">More About Me</a></div>
+<div class="hero-note"><span class="dot"></span> Currently learning • building • improving</div>
+</div>
+
+</div></section>
+
+<section id="about" class="section"><div class="wrap narrow reveal">
+<p class="eyebrow">About Me</p><h2 class="title">Learning, building, and figuring things out along the way.</h2>
+<p class="lead">I’m currently in my third year of Electrical and Electronics Engineering at NIT Nagaland. My academic journey has introduced me to power systems, control systems, digital signal processing and other core engineering subjects, while project work has helped me explore programming, deep learning and mobile application development.</p>
+<p class="lead">I don’t see myself as someone who has everything figured out yet. I’m actively learning, trying things out, making mistakes and improving through practical work. My current project is a good example of that process: it combines machine learning, computer vision, backend development and a mobile interface into one working system.</p>
+<div class="about-pills"><span>3rd Year B.Tech</span><span>Electrical & Electronics</span><span>Project-focused learner</span></div>
+</div></section>
+
+<section id="education" class="section soft"><div class="wrap">
+<p class="eyebrow">Education</p><h2 class="title">Academic background</h2>
+<div class="cards three">
+<article><b>2024–2028</b><h3>National Institute of Technology Nagaland</h3><p>B.Tech in Electrical and Electronics Engineering</p><span class="card-tag">Currently in 3rd year</span></article>
+<article><h3>G. Rio School, Kohima</h3><p>Class 11–12</p></article>
+<article><h3>Jubilee Memorial School, Mokokchung</h3><p>Up to Class 10</p></article>
+</div></div></section>
+
+<section id="skills" class="section"><div class="wrap reveal">
+<p class="eyebrow">Skills & Learning</p><h2 class="title">Tools and areas I’m exploring</h2>
+<p class="lead skills-intro">My skills are still developing, so I prefer to show them as areas I have worked with rather than presenting myself as an expert in everything.</p>
+<div class="skills"><span>Python</span><span>Deep Learning</span><span>CNNs</span><span>TensorFlow</span><span>Keras</span><span>MediaPipe</span><span>Flask</span><span>Flutter</span><span>Figma</span><span>REST APIs</span></div>
+</div></section>
+
+<section id="project" class="section soft"><div class="wrap">
+<p class="eyebrow">Featured Project</p><h2 class="title">AI-Based Emotion Detection Mobile Application with Music Recommendation</h2>
+<p class="section-lead">A major project that brings together deep learning, facial expression analysis, backend development and a Flutter mobile application.</p>
+<article class="project reveal">
+<div class="project-head"><div><small>Deep Learning & Mobile Application Development</small><h3>From facial expression → emotion → music</h3></div><button id="details">View full details →</button></div>
+<p class="lead">The application captures a facial image, locates the face, predicts one of seven emotional states and uses that result to recommend a curated Spotify playlist. The project was designed as a complete client-server pipeline rather than only a machine-learning model.</p>
+<div class="project-story">
+<div class="story-step"><span>01</span><div><b>Input</b><p>User captures a facial image through the mobile application.</p></div></div>
+<div class="story-arrow">→</div>
+<div class="story-step"><span>02</span><div><b>Process</b><p>MediaPipe localizes the face before model inference.</p></div></div>
+<div class="story-arrow">→</div>
+<div class="story-step"><span>03</span><div><b>Prediction</b><p>EfficientNet + MLP classifies the facial expression.</p></div></div>
+<div class="story-arrow">→</div>
+<div class="story-step"><span>04</span><div><b>Recommendation</b><p>The detected emotion is connected to music recommendations.</p></div></div>
+</div>
+<div class="project-grid">
+<div><b>Dataset</b><p>RAF-DB with approximately 30,000 real-world facial images and 7 emotion classes.</p></div>
+<div><b>Face Processing</b><p>MediaPipe Face Mesh with 468 3D facial landmarks for face localization.</p></div>
+<div><b>Final Model</b><p>EfficientNet feature extractor + custom MLP classifier.</p></div>
+<div><b>Application</b><p>Python Flask backend connected to a Flutter mobile frontend.</p></div>
+</div>
+<div class="performance">
+<div class="performance-copy"><p class="eyebrow">Model Comparison</p><h3>Why the final model matters</h3><p>Seven CNN architectures were trained and compared. EfficientNet was the strongest standalone model at 76%, while the final EfficientNet + MLP fusion reached about 80% in the project report.</p></div>
+<div class="chart-wrap"><div class="chart-title"><span>Reported model accuracy</span><small>Higher is better</small></div><div class="bars">
+<div class="bar-row"><label>VGG16 <span>63%</span></label><div><i style="width:63%"></i></div></div>
+<div class="bar-row"><label>ResNet <span>60%</span></label><div><i style="width:60%"></i></div></div>
+<div class="bar-row"><label>Inception <span>66%</span></label><div><i style="width:66%"></i></div></div>
+<div class="bar-row"><label>DenseNet <span>69%</span></label><div><i style="width:69%"></i></div></div>
+<div class="bar-row"><label>ConvNeXt <span>71%</span></label><div><i style="width:71%"></i></div></div>
+<div class="bar-row"><label>MobileNet <span>55%</span></label><div><i style="width:55%"></i></div></div>
+<div class="bar-row"><label>EfficientNet <span>76%</span></label><div><i style="width:76%"></i></div></div>
+<div class="bar-row final"><label>Fusion model <span>~80%</span></label><div><i style="width:80%"></i></div></div>
+</div></div></div>
+<div class="results"><div><strong>~80%</strong><small>reported validation accuracy</small></div><div><strong>&lt; 2 sec</strong><small>reported average response time</small></div><div><strong>7</strong><small>emotion classes</small></div></div>
+</article>
+
+<div id="modal" class="modal" aria-hidden="true"><div class="backdrop"></div><div class="modal-box" role="dialog" aria-modal="true">
+<button id="close" class="close" aria-label="Close">×</button><p class="eyebrow">Project Details</p>
+<h3>What I worked on</h3>
+<p>The project uses the RAF-DB dataset and MediaPipe for face localization. Seven CNN architectures were trained and compared. EfficientNet gave the best standalone performance at 76%, after which an EfficientNet + MLP fusion model was developed and reported at approximately 80% validation accuracy.</p>
+<p>The final architecture uses EfficientNet as a fixed feature extractor and a custom MLP as the classifier head. Dropout was used to reduce overfitting, while preprocessing and augmentation were used to improve robustness.</p>
+<p>The application follows a client-server architecture. The Flutter frontend sends a request to a Python Flask API, which handles camera input, preprocessing and inference before returning the detected emotion and playlist information to the app.</p>
+<div class="details-two"><div><b>Completed</b><br>Seven-model comparison, EfficientNet + MLP, Flask API, Figma UI, Flutter Scan screen and real-time frontend/backend communication.</div><div><b>In progress</b><br>UI refinement, Stats screen, Spotify integration, cloud deployment and model/inference optimization.</div></div>
+</div></div>
+</div></section>
+
+<section id="journey" class="section"><div class="wrap journey-grid">
+<div class="reveal"><p class="eyebrow">Current Journey</p><h2 class="title">Learning through implementation.</h2><p class="lead">Right now, my focus is less about having a perfect skill list and more about becoming better at actually building things. I’m working on completing and refining the emotion detection application while continuing to strengthen my engineering fundamentals.</p></div>
+<div class="journey-card reveal"><div><span>Learning</span><b>Core EEE subjects</b><small>Power systems • control • DSP</small></div><div><span>Building</span><b>AI + mobile project</b><small>Model • API • Flutter UI</small></div><div><span>Improving</span><b>Practical skills</b><small>Debugging • integration • design</small></div></div>
+</div></section>
+
+<section id="contact" class="section soft"><div class="wrap contact">
+<div class="reveal"><p class="eyebrow">Contact</p><h2 class="title">Let’s connect while I keep learning.</h2><p class="lead">I’m a student who is open to learning opportunities, project discussions, internships, academic work and collaborations that can help me gain practical experience.</p>
+<div class="contact-info"><a href="mailto:sentinokdir10@gmail.com">sentinokdir10@gmail.com</a><a href="tel:+917628827559">+91 76288 27559</a></div></div>
+<form id="form" class="form reveal"><label>Name<input id="name" required></label><label>Email<input id="email" type="email" required></label><label>Message<textarea id="message" rows="5" required></textarea></label><button class="btn primary">Prepare Email</button><small>This opens your email application; it does not falsely claim that a message was sent.</small></form>
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Sentiben</span><span>3rd Year • Electrical & Electronics Engineering</span></div></footer>
+<script src="script.js"></script>
+</body></html>
